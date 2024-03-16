@@ -1,0 +1,37 @@
+.navbar{
+  display: flex;
+  background-color: #92240C ;
+  justify-content: space-between;
+  padding-inline: 5rem;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding-inline-start: 2em;
+}
+
+h3{
+  color: whitesmoke
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h3{
+    font-size: 18pt;
+  }
+  a{
+    font-size: 16pt;
+  }
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a{
+    font-size: 16pt;
+  }
+}
