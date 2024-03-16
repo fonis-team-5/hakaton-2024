@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Ime aplikacije </h1>
+      <div className='navbar'> 
+        <a href='#'> Home </a>
+        <a> Games </a>
+        <a> Rewards </a>
+        <a> Login </a>
+      </div>
+      <div className='main-content'>
+        <p id="OPIS">
+           Dobrodošli u prvu humanitarnu kockarnicu! Cilj naše aplikacije je da uz adrenalinsko uzbuđenje igara na sreću učinimo
+           nešto lepo, a takođe omogućimo našim korisnicima da osvoje vredne nagrade.
+        </p>   
+      </div>
     </div>
   );
 }
