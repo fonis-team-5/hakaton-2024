@@ -11,3 +11,135 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  p {
+    font-size: 16pt;
+  }
+}
+
+body{
+  background-color: #FFA894;
+}
+
+.navbar{
+  display: flex;
+  background-color: #92240C ;
+  justify-content: space-between;
+  padding-inline: 5rem;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding-inline-start: 2em;
+}
+
+h3{
+  color: whitesmoke
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h3{
+    font-size: 18pt;
+  }
+  a{
+    font-size: 16pt;
+  }
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a{
+    font-size: 16pt;
+  }
+}
+.description-container {
+  h1{
+    font-size: 48pt;
+  }
+  text-align: center;
+  padding-inline: 4rem;
+  padding-block: 5rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #FFEB14, #0CCC61);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+/* Designs for card-gpts and similar items */
+/* styles.css */
+.card-gpt-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-gpt {
+  width: 500px;
+  margin: 10px;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #FFEB14, #0CCC61);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+
+}
+
+.card-gpt img {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.card-gpt img:hover {
+
+}
+
+.card-gpt-content {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card-gpt {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-gpt {
+    width: calc(100% - 20px);
+  }
+}
+
+/* End of card-gpt desgin */
+
+.card-container {
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-around;
+  margin-inline: 2em;
+  
+}

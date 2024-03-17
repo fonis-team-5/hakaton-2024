@@ -1,16 +1,29 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 function Navbar() {
+  const navigate = useNavigate();
+
+  const handleHomeClick = () => {
+    navigate("/");
+  };
+
+  const handleRewardsClick = () => {
+    navigate("/rewards");
+  };
+
   return (
     <div className="navbar">
       <div className="left">
-            <h3>CaringCoin  </h3>
-            <a href="#">Home</a>
-            <a href="#">Rewards</a>
-        </div>
-        <div className="right">
-            <a href="#">Log in / Sign up</a>
-        </div>
+        <h3>CaringCoin </h3>
+        <p onClick={handleHomeClick}> Home </p>
+        <p onClick={handleRewardsClick}> Rewards </p>
+      </div>
+      <div className="right">
+        <Link to="/login">Log in / Sign up</Link>
+      </div>
     </div>
-    
   );
 }
 
