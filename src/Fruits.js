@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Fruits.css';
 
 function Fruits() {
   const [amount, setAmount] = useState(0);
