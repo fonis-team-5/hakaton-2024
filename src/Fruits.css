@@ -1,0 +1,117 @@
+#slot-machine {
+  position: relative; /* Ensure relative positioning for absolute positioning of slots */
+  text-align: center; /* Center align the slots */
+  top: 167px;
+  
+}
+
+#slots {
+  position: absolute; /* Position the slots image */
+  top: 120px; /* Adjust top position as needed */
+  left: 50%; /* Place it horizontally centered */
+  transform: translateX(-50%); /* Move it back to center */
+  z-index: -1; /* Ensure the slots image stays behind other content */
+  width: 40%; /* Set the width */
+  border-radius: 11%;
+}
+
+.slot {
+  display: inline-block;
+  width: 162px;
+  height: 150px;
+  overflow: hidden;
+  position: relative; /* Position the slots relatively within the slot machine container */
+  margin: 0 7px; 
+}
+
+
+img {
+  width: 98%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#amount-display {
+  position: absolute;
+  top: 30px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(150, 51, 29);
+}
+
+#message {
+  position: absolute;
+  top: 500px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(150, 51, 29);
+}
+
+#amount-input {
+  position: absolute;
+  top: 70px; /* Adjust as needed */
+  left: 45%;
+  width: 200px;
+  height: 30px;
+  transform: translateX(-50%);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(150, 51, 29);
+  border-radius: 5%;
+  background-color: rgb(226, 215, 215);
+}
+
+.amount-button {
+  position: absolute;
+  top: 70px; /* Adjust as needed */
+  left: 58%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  width: 120px; /* adjust width as needed */
+  height: 33px; /* adjust height as needed */
+  border-radius: 5px; /* half of height to make it rounded */
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 30%; /* Reduce opacity to visually indicate disabled state */
+  cursor: not-allowed; /* Change cursor to indicate button is not clickable */
+  /* You can add more styling as needed */
+}
+
+#spin-button {
+  position: absolute;
+  top: 450px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  width: 200px; /* adjust width as needed */
+  height: 50px; /* adjust height as needed */
+  border-radius: 25px; /* half of height to make it rounded */
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+#spin-button:hover {
+  background-color: #ffa50080; /* lighter orange color with opacity */
+}
+
+#credits {
+  display: inline-block;
+}
