@@ -60,10 +60,11 @@ h3{
     font-size: 16pt;
   }
 }
-.description-container {
-  h1{
+h1{
     font-size: 48pt;
   }
+.description-container {
+  
   text-align: center;
   padding-inline: 4rem;
   padding-block: 5rem;
@@ -142,4 +143,47 @@ h3{
   justify-content: space-around;
   margin-inline: 2em;
   
+}
+
+.rewards-container{
+  text-align: center;
+  
+}
+
+rewards-wrapper{
+  
+}
+
+.cl-text{
+  h2{
+    font-weight: light;
+    font-size: 26pt;
+  }
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 200px; 
+  flex-direction: column;
+  margin-right: 4em;
+}
+
+.cl-img{
+  img{
+    height: 180px;
+    width: auto;
+  }
+}
+
+.reward-l{
+  padding-top: 1em;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-block-end: 2em;
+  margin-inline: 10%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #FFEB14, #0CCC61);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+  border-radius: 15px;
 }
