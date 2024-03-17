@@ -21,7 +21,7 @@ function Navbar() {
         <p onClick={handleRewardsClick}> Rewards </p>
       </div>
       <div className="right">
-        <Link to="/login">Log in / Sign up</Link>
+        <p>Log in / Sign up</p>
       </div>
     </div>
   );
