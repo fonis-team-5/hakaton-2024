@@ -30,7 +30,7 @@ body{
   filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
 }
 
-a {
+.navbar p {
   color: whitesmoke;
   text-decoration: none;
   padding-inline-start: 2em;
