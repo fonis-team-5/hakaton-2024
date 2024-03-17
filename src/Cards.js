@@ -1,4 +1,5 @@
 import Slot from "./Slot";
+import cs from "./media/cs.png"
 
 function Cards() {
     return(

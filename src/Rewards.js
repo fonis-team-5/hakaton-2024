@@ -12,18 +12,22 @@ class Nagrada {
 
     prikazi(){
         return(
-            <div className="reward">
-                    <h2>{this.naziv}</h2>
+            <div className="reward-l">
+                <div className='cl-text'>
+                    <h2 className='tip-nagrade'>{this.tip}</h2>
+                    <p>{this.naziv}</p>
+                </div>
+                <div className='cl-img'>
                     <img src={this.slika}></img>
-                    <p className='tip-nagrade'>{this.tip}</p>
+                </div>
             </div>
         )
     }
 }
 
-const nagrada1 = new Nagrada("Popust od 30% na članarinu u teretani Ahilej",ahilej,"dnevna");
-const nagrada2 = new Nagrada("Besplatna karta za utakmicu Partizan - Real Madrid", evroliga, "nedeljna");
-const nagrada3 = new Nagrada("Tri besplatna obroka po izboru u Burito Madreu",burito,"mesečna");
+const nagrada1 = new Nagrada("Popust od 30% na članarinu u teretani Ahilej",ahilej,"DNEVNA");
+const nagrada2 = new Nagrada("Besplatna karta za utakmicu Partizan - Real Madrid", evroliga, "NEDELJNA");
+const nagrada3 = new Nagrada("Tri besplatna obroka po izboru u Burito Madreu",burito,"MESEČNA");
 
 
 function Rewards() {
