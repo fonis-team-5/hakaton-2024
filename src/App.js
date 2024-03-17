@@ -5,6 +5,7 @@ import Rewards from './Rewards';
 import Login from './Login';
 import Homepage from './Homepage';
 import UserProfile from './UserProfile';
+import Fruits from './Fruits';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/rewards" element={<Rewards/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/user" element={<UserProfile/>} />
+          <Route path="/fruits" element={<Fruits/>} />
         </Routes>
         </div>
        

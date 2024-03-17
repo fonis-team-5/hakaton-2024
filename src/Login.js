@@ -27,7 +27,6 @@ function Login() {
 
         let flag = false;
         for(let korisnik of korisnici) {
-            console.log(korisnik)
             if (korisnik.mail == mail && korisnik.password == password) {
                 flag = true;
             }
