@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Rewards from './Rewards';
 import Login from './Login';
 import Homepage from './Homepage';
+import UserProfile from './UserProfile';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path='/' element={< Homepage />}/>
           <Route path="/rewards" element={<Rewards/>} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/user" element={<UserProfile/>} />
         </Routes>
         </div>
        
