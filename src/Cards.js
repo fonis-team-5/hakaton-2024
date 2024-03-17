@@ -1,12 +1,13 @@
 import Slot from "./Slot";
+
 function Cards() {
     return(
         <div className="card-container">
-          <Slot />
-          <div className="card card3">
-            <h2>Treca igra</h2>
-            <img src=""></img>
-          </div>
+          <Slot imageUrl="https://placehold.co/1600x900" title="🎇 Gambling Game 🎇" description="Lorem ipsum dolor sit amet consectetur adipiscing elit!" />
+          <Slot imageUrl="https://placehold.co/1600x900" title="🎇 Gambling Game 🎇" description="Lorem ipsum dolor sit amet consectetur adipiscing elit!" />
+          <Slot imageUrl="https://placehold.co/1600x900" title="🎇 Gambling Game 🎇" description="Lorem ipsum dolor sit amet consectetur adipiscing elit!" />
+
+          
         </div>
     );
 
