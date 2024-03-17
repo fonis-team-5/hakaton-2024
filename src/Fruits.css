@@ -12,7 +12,7 @@
   transform: translateX(-50%); /* Move it back to center */
   z-index: -1; /* Ensure the slots image stays behind other content */
   width: 40%; /* Set the width */
-  border-radius: 5%;
+  border-radius: 11%;
 }
 
 .slot {
