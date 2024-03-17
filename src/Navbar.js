@@ -13,6 +13,10 @@ function Navbar() {
     navigate("/rewards");
   };
 
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
+
   return (
     <div className="navbar">
       <div className="left">
@@ -21,7 +25,8 @@ function Navbar() {
         <p onClick={handleRewardsClick}> Rewards </p>
       </div>
       <div className="right">
-        <p>Log in / Sign up</p>
+        <p onClick={handleLoginClick}>Log in / Sign up</p>
+        
       </div>
     </div>
   );
