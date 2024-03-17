@@ -1,31 +1,28 @@
 import Slot from "./Slot";
 import cs from "./media/cs.png";
-import { useNavigate } from "react-router-dom";
+import lucky6 from "./media/lucky6.png";
+import vockice from "./media/vockice.jpeg";
+
 
 function Cards() {
-  const navigate = useNavigate();
-  const handleNavigate = () => {
-    navigate("/fruits");
-  };
+  
   return (
     <div className="card-container">
-        <p onClick={handleNavigate}>
-            Fruits
-        </p>
+
       <Slot
-        imageUrl="https://placehold.co/1600x900"
-        title="🎇 Gambling Game 🎇"
-        description="Lorem ipsum dolor sit amet consectetur adipiscing elit!"
+        imageUrl={vockice}
+        title="🎇 Voćkice 🎇"
+        description="Voćkice mi život upropastile"
       />
       <Slot
-        imageUrl="https://placehold.co/1600x900"
-        title="🎇 Gambling Game 🎇"
-        description="Lorem ipsum dolor sit amet consectetur adipiscing elit!"
+        imageUrl={lucky6}
+        title="🎇 Lucky Six 🎇"
+        description="Za prave kockare"
       />
       <Slot
-        imageUrl="https://placehold.co/1600x900"
-        title="🎇 Gambling Game 🎇"
-        description="Lorem ipsum dolor sit amet consectetur adipiscing elit!"
+        imageUrl={cs}
+        title="🎇 Rulet 🎇"
+        description="Uskoro dostupno na našoj platformi"
       />
     </div>
   );
