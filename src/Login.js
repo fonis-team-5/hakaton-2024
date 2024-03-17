@@ -8,14 +8,37 @@ class Korisnik {
     }
 }
 
-const Marko = new Korisnik("Marko Arsic", "marko.arsic@fonis.rs", 'marko');
+const korisnici = [
+    new Korisnik("Marko Arsic", "marko.arsic@fonis.rs", "marko"),
+    new Korisnik("Nadja Markicevic", "nadja.markicevic", "nadja"),
+    new Korisnik("Luka Jelisavac", "luka.jelisavac@fonis.rs", "luka"),
+    new Korisnik("Ivan Baranac", "ivan.baranac@fonis.rs", "ivan")
+];
+
+
 
 
 function Login() {
     const navigate = useNavigate();
     const loginBtn = document.getElementById("LOGIN_BTN");
     const handleClick = ()=>{
-        navigate("/user");
+        const mail = document.getElementById("MAIL").value;
+        const password = document.getElementById("PASSWORD").value;
+
+        let flag = false;
+        for(let korisnik of korisnici) {
+            console.log(korisnik)
+            if (korisnik.mail == mail && korisnik.password == password) {
+                flag = true;
+            }
+        }
+
+        if (flag) {
+            navigate('/user')
+        } else {
+            alert("Ne postoji ovakav korisnik, pokušajte ponovo");
+        }
+
     }
     return(
         <div className="login-container">
