@@ -30,8 +30,8 @@ class Nagrada {
 const nagrada1 = new Nagrada("Popust od 30% na članarinu u teretani Ahilej",ahilej,"DNEVNA");
 const nagrada2 = new Nagrada("Besplatna karta za utakmicu Partizan - Real Madrid", evroliga, "NEDELJNA");
 const nagrada3 = new Nagrada("Tri besplatna obroka po izboru u Burito Madreu",burito,"MESEČNA");
-const nagrada4 = new Nagrada("Dve noći u Hotelu Mona na Zlatiboru",mona,"mesečna");
-const nagrada5 = new Nagrada("Fiat 500",fiat,"godišnja");
+const nagrada4 = new Nagrada("Dve noći u Hotelu Mona na Zlatiboru",mona,"MESEČNA");
+const nagrada5 = new Nagrada("Fiat 500",fiat,"GODIŠNJA");
 
 
 

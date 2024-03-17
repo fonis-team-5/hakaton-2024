@@ -187,3 +187,56 @@ rewards-wrapper{
   filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
   border-radius: 15px;
 }
+
+.register-option form{
+  display: flex;
+  flex-direction: column;
+  margin-inline: 6rem;
+  padding: 2em;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #450b83, #0CCC61);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+  margin-block: 4em;
+  border-radius: 15px;
+  h2{
+    color:whitesmoke;
+  }
+}
+
+.login-option form {
+  padding: 2em;
+  margin-inline: 6rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #450b83, #0CCC61);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+  margin-block: 4em;
+  border-radius: 15px;
+  h2{
+    color:whitesmoke;
+  }
+}
+
+label{
+  font-size: 16px;
+  color: whitesmoke;
+}
+
+input {
+  background: none;
+  border: 1px solid var(--clr-shadow-200);
+  font-size: 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid whitesmoke;
+  width: auto;
+  margin-block: 1em;
+  color: whitesmoke;
+}
+
+input:focus{
+  outline: none;
+}
+
